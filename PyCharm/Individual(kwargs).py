@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+"""
+Фильтр, который выводит только значения a, e, i, o. 
+"""
+
 def filter_kwargs(**kwargs):
     filters = ["a", "e", "i", "o"]
     params = [kwargs.get(k) for k in filters if kwargs.get(k)]
